@@ -25,6 +25,16 @@ class DailyWordCardViewModel(
     }
 
     fun speak(text: String) {
-        textReader.readText(text)
+        textReader.readText(
+            wordDefinition.value.word
+        )
+        textReader.readText(
+            wordDefinition.value.definition
+        )
+    }
+
+    override fun onCleared() {
+
+        super.onCleared()
     }
 }

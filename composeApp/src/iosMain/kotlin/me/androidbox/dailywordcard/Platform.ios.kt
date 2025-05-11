@@ -13,4 +13,8 @@ actual class TextReaderImp() : TextReader {
     actual override fun readText(text: String) {
         TODO("Not yet implemented")
     }
+
+    actual override fun shutdown() {
+        TODO("Not yet implemented")
+    }
 }

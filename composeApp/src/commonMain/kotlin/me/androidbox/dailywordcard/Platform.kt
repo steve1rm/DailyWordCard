@@ -10,4 +10,5 @@ expect fun getPlatform(): Platform
 
 expect class TextReaderImp : TextReader {
     override fun readText(text: String)
+    override fun shutdown()
 }
