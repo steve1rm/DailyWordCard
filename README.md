@@ -1,14 +1,20 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# DailyWordCard
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+# In a Nutshell
+Create a single-screen “Word of the Day” experience that displays a randomly selected word and definition in a clean, focused card layout, with a one-tap button to hear both read aloud via Text-to-Speech.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+# Description
+You’re halfway through your morning coffee when your brain reminds you: “We agreed to learn one new word a day, remember?” But dictionaries are long. Flashcards are lost. And your cat sat on your notes. Thankfully, a genius idea hits: a minimalist app that serves one word and its meaning daily, spoken aloud so even your half-asleep self can absorb it. Sounds great, right?
 
+Yeah, well… now you have to build it—time to ship that Word of the Day screen.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+# Tech Stack
+- [x] Jetpack Compose
+- [X] Compose KMP (Android, iOS) 
+- [x] Koin dependency injection
+- [x] Clean architecture
+- [x] Gradle version catalog
+- [x] kotlin coroutines
+- [x] Flows
+- [x] MVVM
+- [x] Material design 3
