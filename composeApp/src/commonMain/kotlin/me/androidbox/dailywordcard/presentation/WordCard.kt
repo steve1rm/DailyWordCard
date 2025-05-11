@@ -16,8 +16,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import me.androidbox.dailywordcard.montserrat
+import me.androidbox.dailywordcard.poltawskiNowy
 import me.androidbox.dailywordcard.presentation.model.WordDefinition
 import me.androidbox.dailywordcard.presentation.model.wordList
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -42,6 +45,7 @@ fun WordCard(
         ) {
             Text(
                 text = wordDefinition.word,
+                fontFamily = poltawskiNowy,
                 fontSize = 38.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFf13182C)
@@ -51,7 +55,9 @@ fun WordCard(
 
             Text(
                 text = wordDefinition.definition,
+                textAlign = TextAlign.Center,
                 fontSize = 19.sp,
+                fontFamily = montserrat,
                 fontWeight = FontWeight.Normal,
                 color = Color(0xFf4C4F59)
             )
